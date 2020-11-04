@@ -68,7 +68,7 @@ class Item(Resource):
         del shelf[identifier]
         return '', 204
 
-TEST
+Another TEST
         
 api.add_resource(ItemList, '/items')
 api.add_resource(Item, '/item/<string:identifier>')
