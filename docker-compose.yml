@@ -4,7 +4,6 @@ services:
   item_management:
     build: .
     volumes: 
-      - .:/usr/src/app
+      - .:/usr/src/app/api
     ports: 
       - 5000:80
-
