@@ -2,9 +2,11 @@ version: "3.7"
 
 services:
   item_management:
-    build: .
+    build: 
+      context: ./item_management
+      dockerfile: Dockerfile
     volumes: 
-      - .:/usr/src/app
+      - .:/usr/src/app/api
     ports: 
       - 5000:80
 
