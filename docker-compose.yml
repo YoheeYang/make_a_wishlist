@@ -5,8 +5,27 @@ services:
     build: 
       context: ./item_management
       dockerfile: Dockerfile
+    container_name: api
     volumes: 
       - .:/usr/src/app/api
-    ports: 
-      - 5000:80
+    expose:
+      - 5000
+
+  web_client:
+    build:
+      context: ./web_client
+      dockerfile: Dockerfile
+    container_name: web_client
+    volumes:
+      - .:/app
+    expose:
+      - 80
+
+  nginx:
+    build: ./nginx
+    container_name: nginx
+    ports:
+      - "8000:8000"
+      - "8001:80"   
+
 
