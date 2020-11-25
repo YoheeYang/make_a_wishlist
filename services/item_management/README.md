@@ -81,6 +81,7 @@ Returns the new item if successful.
         "brand": "Sony",
         "item_type": "electronic",
         "expire_date": "never", 
+        "desire":"5",
         "sales": {
             "platform": "taobao",
             "name": "system recomendation",
@@ -96,7 +97,7 @@ Returns the new item if successful.
 
 **Response**
 
-- 404: device not found
+- 404: item not found
 - 200: success
 
 
@@ -107,6 +108,6 @@ Returns the new item if successful.
 
 **Response**
 
-- 404: device not found
+- 404: item not found
 - 204: success
 

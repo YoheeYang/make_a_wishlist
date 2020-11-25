@@ -20,6 +20,10 @@ services:
     container_name: web_client
     volumes:
       - .:/app
+      - /app/node_modules
+    ports:
+      - 3000:3000
+      - 9229:9229
     expose:
       - 80
       
